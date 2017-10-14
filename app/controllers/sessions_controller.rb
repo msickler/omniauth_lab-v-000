@@ -4,7 +4,7 @@ class SessionsController < ApplicationController
       user.name = auth['info']['name']
       user.email = auth['info']['email']
     end
-    session[:user_id] = @user.id 
+    session[:user_id] = @user.id
     render '/home'
   end
 
@@ -14,4 +14,4 @@ class SessionsController < ApplicationController
     request.env['omniauth.auth']
   end
 
-end 
+end
