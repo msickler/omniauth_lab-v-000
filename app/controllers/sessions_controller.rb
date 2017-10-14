@@ -5,7 +5,7 @@ class SessionsController < ApplicationController
       user.email = auth['info']['email']
     end
     session[:user_id] = @user.id
-    render '/home'
+    render 'welcome/home'
   end
 
   private
