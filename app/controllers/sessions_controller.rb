@@ -1,10 +1,10 @@
-class SessionsController < ApplicationController 
-  def create 
-  end 
+class SessionsController < ApplicationController
+  def create
+  end
 
-  private 
+  private
 
-  def auth 
-  end 
-  
+  def auth
+  end
+
 end 
